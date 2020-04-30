@@ -5,7 +5,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("洛雪"),
+        child: Text("洛雪音乐"),
       ),
     );
   }
