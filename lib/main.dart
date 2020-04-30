@@ -1,7 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterlxmusic/application.dart';
-import 'package:flutterlxmusic/pages/home_page.dart';
+import 'package:flutterlxmusic/pages/splash_page.dart';
 import 'package:flutterlxmusic/provider/temp_state.dart';
 import 'package:flutterlxmusic/router/navigate_service.dart';
 import 'package:flutterlxmusic/router/routers.dart';
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: SplashPage(),
       onGenerateRoute: Application.router.generator,
     );
   }
