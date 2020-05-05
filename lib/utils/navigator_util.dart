@@ -20,4 +20,9 @@ class NavigatorUtil {
   static void goHomePage(BuildContext context) {
     _navigateTo(context, Routers.home, clearStack: true);
   }
+
+  static void goAboutPage(BuildContext context) {
+    _navigateTo(context, Routers.about);
+  }
+
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterlxmusic/pages/tabs/mine_page.dart';
 import 'package:flutterlxmusic/utils/utils.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,9 +17,7 @@ class _HomePageState extends State<HomePage> {
     Center(
       child: Text(("排行榜")),
     ),
-    Center(
-      child: Text(("歌单")),
-    ),
+    MinePage(),
   ];
 
   @override

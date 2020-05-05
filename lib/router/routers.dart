@@ -8,6 +8,7 @@ class Routers {
   static String root = "/";
   static String home = "/home";
   static String splash = "/splash";
+  static String about = "/about";
 
   static void configureRouters(Router router) {
     router.notFoundHandler = Handler(
@@ -16,8 +17,9 @@ class Routers {
       }
     );
     router.define("root", handler: splashHandler);
-    router.define("splash", handler: splashHandler);
-    router.define("home", handler: homeHandler);
+    router.define("/splash", handler: splashHandler);
+    router.define("/home", handler: homeHandler);
+    router.define("/about", handler: aboutHandler);
   }
 
 }
